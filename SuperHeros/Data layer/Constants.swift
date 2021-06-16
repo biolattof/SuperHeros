@@ -9,7 +9,7 @@ import Foundation
 
 struct Constants {
     struct ProductionServer {
-        static let baseURL = "https://dev.consultr.net/superhero.json"
+        static let baseURL = "https://dev.consultr.net"
     }
 }
 

@@ -12,6 +12,3 @@ protocol APIConfiguration: URLRequestConvertible {
 
 import Alamofire
 
-class APIClient {
-    
-}

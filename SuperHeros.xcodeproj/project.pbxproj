@@ -21,8 +21,11 @@
 		FA53692826799A0400B6D03F /* HerosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53692726799A0400B6D03F /* HerosService.swift */; };
 		FA53693926799C9700B6D03F /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53693826799C9700B6D03F /* Hero.swift */; };
 		FA5369492679A32800B6D03F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369482679A32800B6D03F /* Constants.swift */; };
-		FA53694F2679A52400B6D03F /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53694E2679A52400B6D03F /* MainScreenRouter.swift */; };
+		FA53694F2679A52400B6D03F /* HerosListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53694E2679A52400B6D03F /* HerosListRouter.swift */; };
 		FA53695A2679A84600B6D03F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369592679A84600B6D03F /* API.swift */; };
+		FA5369672679AAE500B6D03F /* HerosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369662679AAE500B6D03F /* HerosListViewController.swift */; };
+		FA53698C267A3B8A00B6D03F /* HerosListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53698B267A3B8A00B6D03F /* HerosListPresenter.swift */; };
+		FA536997267A3C8200B6D03F /* HerosListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA536996267A3C8200B6D03F /* HerosListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +72,11 @@
 		FA53692726799A0400B6D03F /* HerosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosService.swift; sourceTree = "<group>"; };
 		FA53693826799C9700B6D03F /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		FA5369482679A32800B6D03F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FA53694E2679A52400B6D03F /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		FA53694E2679A52400B6D03F /* HerosListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListRouter.swift; sourceTree = "<group>"; };
 		FA5369592679A84600B6D03F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FA5369662679AAE500B6D03F /* HerosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListViewController.swift; sourceTree = "<group>"; };
+		FA53698B267A3B8A00B6D03F /* HerosListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListPresenter.swift; sourceTree = "<group>"; };
+		FA536996267A3C8200B6D03F /* HerosListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +133,6 @@
 		FA5368E4267998A100B6D03F = {
 			isa = PBXGroup;
 			children = (
-				FA5369592679A84600B6D03F /* API.swift */,
-				FA53692726799A0400B6D03F /* HerosService.swift */,
-				FA5369482679A32800B6D03F /* Constants.swift */,
-				FA53693826799C9700B6D03F /* Hero.swift */,
 				FA5368EF267998A100B6D03F /* SuperHeros */,
 				FA536906267998A200B6D03F /* SuperHerosTests */,
 				FA536911267998A200B6D03F /* SuperHerosUITests */,
@@ -153,7 +155,8 @@
 		FA5368EF267998A100B6D03F /* SuperHeros */ = {
 			isa = PBXGroup;
 			children = (
-				FA53694D2679A4F100B6D03F /* MainScreen */,
+				FA53695E2679A9CE00B6D03F /* Data layer */,
+				FA53694D2679A4F100B6D03F /* HerosList */,
 				FA5368F0267998A100B6D03F /* AppDelegate.swift */,
 				FA5368F2267998A100B6D03F /* SceneDelegate.swift */,
 				FA5368F4267998A100B6D03F /* ViewController.swift */,
@@ -183,12 +186,26 @@
 			path = SuperHerosUITests;
 			sourceTree = "<group>";
 		};
-		FA53694D2679A4F100B6D03F /* MainScreen */ = {
+		FA53694D2679A4F100B6D03F /* HerosList */ = {
 			isa = PBXGroup;
 			children = (
-				FA53694E2679A52400B6D03F /* MainScreenRouter.swift */,
+				FA53694E2679A52400B6D03F /* HerosListRouter.swift */,
+				FA53698B267A3B8A00B6D03F /* HerosListPresenter.swift */,
+				FA5369662679AAE500B6D03F /* HerosListViewController.swift */,
+				FA536996267A3C8200B6D03F /* HerosListInteractor.swift */,
 			);
-			path = MainScreen;
+			path = HerosList;
+			sourceTree = "<group>";
+		};
+		FA53695E2679A9CE00B6D03F /* Data layer */ = {
+			isa = PBXGroup;
+			children = (
+				FA5369592679A84600B6D03F /* API.swift */,
+				FA5369482679A32800B6D03F /* Constants.swift */,
+				FA53693826799C9700B6D03F /* Hero.swift */,
+				FA53692726799A0400B6D03F /* HerosService.swift */,
+			);
+			path = "Data layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,8 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA53694F2679A52400B6D03F /* MainScreenRouter.swift in Sources */,
+				FA53694F2679A52400B6D03F /* HerosListRouter.swift in Sources */,
+				FA536997267A3C8200B6D03F /* HerosListInteractor.swift in Sources */,
 				FA53693926799C9700B6D03F /* Hero.swift in Sources */,
+				FA53698C267A3B8A00B6D03F /* HerosListPresenter.swift in Sources */,
+				FA5369672679AAE500B6D03F /* HerosListViewController.swift in Sources */,
 				FA5368F5267998A100B6D03F /* ViewController.swift in Sources */,
 				FA5368F1267998A100B6D03F /* AppDelegate.swift in Sources */,
 				FA53692826799A0400B6D03F /* HerosService.swift in Sources */,
