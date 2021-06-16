@@ -13,8 +13,12 @@ protocol HerosListViewProtocol where Self: UIViewController {
 
 import UIKit
 
-class HerosListViewController: UIViewController, HerosListViewProtocol {
+class HerosListViewController: UIViewController, Storyboarded, HerosListViewProtocol {
     var presenter: HerosListPresenterProtocol?
+    
+    static func storyboardName() -> String {
+        return ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -3,8 +3,8 @@ disabled_rules:
     - variable_name_min_length
     - function_parameter_count
     - type_name
+    - force_cast
     
-
 opt_in_rules:
     - empty_count
     - empty_string
