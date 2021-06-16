@@ -13,7 +13,7 @@ struct Hero: Decodable {
     var powerStats: Stats
     
     enum CodingKeys: String, CodingKey {
-        case id = "id", name = "name", powerStats
+        case id, name, powerStats
     }
 }
 
@@ -26,6 +26,6 @@ struct Stats: Decodable {
     var combat: Int = 0
     
     enum CodingKeys: String, CodingKey {
-        case intelligence = "intelligence", strength = "strength", speed = "speed", durability = "durability", power = "power", combat = "combat"
+        case intelligence, strength, speed, durability, power, combat
     }
 }

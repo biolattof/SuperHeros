@@ -18,8 +18,11 @@
 		FA5368FD267998A100B6D03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5368FB267998A100B6D03F /* LaunchScreen.storyboard */; };
 		FA536908267998A200B6D03F /* SuperHerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA536907267998A200B6D03F /* SuperHerosTests.swift */; };
 		FA536913267998A200B6D03F /* SuperHerosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA536912267998A200B6D03F /* SuperHerosUITests.swift */; };
-		FA53692826799A0400B6D03F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53692726799A0400B6D03F /* API.swift */; };
+		FA53692826799A0400B6D03F /* HerosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53692726799A0400B6D03F /* HerosService.swift */; };
 		FA53693926799C9700B6D03F /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53693826799C9700B6D03F /* Hero.swift */; };
+		FA5369492679A32800B6D03F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369482679A32800B6D03F /* Constants.swift */; };
+		FA53694F2679A52400B6D03F /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53694E2679A52400B6D03F /* MainScreenRouter.swift */; };
+		FA53695A2679A84600B6D03F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369592679A84600B6D03F /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,11 @@
 		FA53690E267998A200B6D03F /* SuperHerosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHerosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA536912267998A200B6D03F /* SuperHerosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHerosUITests.swift; sourceTree = "<group>"; };
 		FA536914267998A200B6D03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA53692726799A0400B6D03F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FA53692726799A0400B6D03F /* HerosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosService.swift; sourceTree = "<group>"; };
 		FA53693826799C9700B6D03F /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		FA5369482679A32800B6D03F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA53694E2679A52400B6D03F /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		FA5369592679A84600B6D03F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +127,9 @@
 		FA5368E4267998A100B6D03F = {
 			isa = PBXGroup;
 			children = (
-				FA53692726799A0400B6D03F /* API.swift */,
+				FA5369592679A84600B6D03F /* API.swift */,
+				FA53692726799A0400B6D03F /* HerosService.swift */,
+				FA5369482679A32800B6D03F /* Constants.swift */,
 				FA53693826799C9700B6D03F /* Hero.swift */,
 				FA5368EF267998A100B6D03F /* SuperHeros */,
 				FA536906267998A200B6D03F /* SuperHerosTests */,
@@ -145,6 +153,7 @@
 		FA5368EF267998A100B6D03F /* SuperHeros */ = {
 			isa = PBXGroup;
 			children = (
+				FA53694D2679A4F100B6D03F /* MainScreen */,
 				FA5368F0267998A100B6D03F /* AppDelegate.swift */,
 				FA5368F2267998A100B6D03F /* SceneDelegate.swift */,
 				FA5368F4267998A100B6D03F /* ViewController.swift */,
@@ -172,6 +181,14 @@
 				FA536914267998A200B6D03F /* Info.plist */,
 			);
 			path = SuperHerosUITests;
+			sourceTree = "<group>";
+		};
+		FA53694D2679A4F100B6D03F /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA53694E2679A52400B6D03F /* MainScreenRouter.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,11 +448,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA53694F2679A52400B6D03F /* MainScreenRouter.swift in Sources */,
 				FA53693926799C9700B6D03F /* Hero.swift in Sources */,
 				FA5368F5267998A100B6D03F /* ViewController.swift in Sources */,
 				FA5368F1267998A100B6D03F /* AppDelegate.swift in Sources */,
-				FA53692826799A0400B6D03F /* API.swift in Sources */,
+				FA53692826799A0400B6D03F /* HerosService.swift in Sources */,
 				FA5368F3267998A100B6D03F /* SceneDelegate.swift in Sources */,
+				FA53695A2679A84600B6D03F /* API.swift in Sources */,
+				FA5369492679A32800B6D03F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
