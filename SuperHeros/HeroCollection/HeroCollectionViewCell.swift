@@ -8,5 +8,9 @@
 import UIKit
 
 class HeroCollectionViewCell: UICollectionViewCell {
+    @IBOutlet var name: UILabel!
     
+    func configure(hero: Hero) {
+        self.name.text = hero.name
+    }
 }

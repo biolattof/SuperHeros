@@ -7,6 +7,7 @@
 
 protocol HerosListViewProtocol where Self: UIViewController {
     var presenter: HerosListPresenterProtocol? { get set }
+    func reloadCollectionSafely()
 }
 
 import UIKit
@@ -21,12 +22,21 @@ class HerosListViewController: UIViewController, Storyboarded, HerosListViewProt
         return "HerosList"
     }
     
+    // MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    // MARK: methods
+    func reloadCollectionSafely() {
+        DispatchQueue.main.async {
+            self.collection?.reloadData()
+        }
+    }
 }
+
+// MARK: UICollection delegate
 
 extension HerosListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
