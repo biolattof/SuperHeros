@@ -27,7 +27,7 @@ class HerosListViewController: UIViewController, Storyboarded, HerosListViewProt
         super.viewDidLoad()
         collection?.delegate = self
         collection?.dataSource = self
-        reloadCollectionSafely()
+        presenter?.getHeros()
     }
     
     // MARK: methods

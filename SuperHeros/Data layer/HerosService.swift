@@ -22,7 +22,7 @@ enum HerosService: APIConfiguration {
     var path: String {
         switch self {
         case .getHeros:
-            return "/superheros.json"
+            return "/superhero.json"
         }
     }
     

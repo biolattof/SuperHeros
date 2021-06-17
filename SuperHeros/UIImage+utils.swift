@@ -18,7 +18,6 @@ extension UIImageView {
             self.af.cancelImageRequest()
             self.af.setImage(withURL: URL,
              cacheKey: imgUrl,
-             //TODO: set placeholder for
              placeholderImage: nil,
              serializer: nil,
              filter: nil,

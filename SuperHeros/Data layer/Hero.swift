@@ -8,14 +8,13 @@
 import Foundation
 
 struct Hero: Decodable {
-    var id = ""
+    var id = 0
     var name = ""
-    var smallImageURL = ""
-    var largeImageURL = ""
     var powerStats: Stats
+    var images: HeroImages
     
     enum CodingKeys: String, CodingKey {
-        case id, name, powerStats
+        case id, name, powerStats = "powerstats", images
     }
 }
 
@@ -29,5 +28,14 @@ struct Stats: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case intelligence, strength, speed, durability, power, combat
+    }
+}
+
+struct HeroImages: Decodable {
+    var smallImageURL = ""
+    var largeImageURL = ""
+    
+    enum CodingKeys: String, CodingKey {
+        case smallImageURL = "xs", largeImageURL = "lg"
     }
 }

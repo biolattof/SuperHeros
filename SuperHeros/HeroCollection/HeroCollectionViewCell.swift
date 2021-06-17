@@ -13,6 +13,6 @@ class HeroCollectionViewCell: UICollectionViewCell {
     
     func configure(hero: Hero) {
         self.name.text = hero.name
-        self.imageURL.setImageFromUrl(hero.smallImageURL, completion: nil)
+        self.imageURL.setImageFromUrl(hero.images.smallImageURL, completion: nil)
     }
 }

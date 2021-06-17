@@ -17,10 +17,12 @@ class HerosListRouter: NSObject, HerosListCoordinatorProtocol {
         let view: HerosListViewProtocol = HerosListViewController.instantiate()
         let presenter: HerosListPresenterProtocol = HerosListPresenter()
         let coordinator: HerosListCoordinatorProtocol = HerosListRouter()
+        let interactor: HerosListInteractorProtocol = HerosListInteractor()
         
         view.presenter = presenter
         presenter.view = view
         presenter.router = coordinator
+        presenter.interactor = interactor
         
         return view
     }

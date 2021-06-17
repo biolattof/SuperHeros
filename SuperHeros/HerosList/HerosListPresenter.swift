@@ -12,6 +12,7 @@ protocol HerosListPresenterProtocol: class {
     var interactor: HerosListInteractorProtocol? { get set }
     var router: HerosListCoordinatorProtocol? { get set }
     var heros: [Hero] { get set }
+    func getHeros()
     func getCellForRowAt(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
     func getNumberOfItemsInSection() -> Int
     func getNumberOfSections() -> Int
@@ -24,11 +25,25 @@ class HerosListPresenter: NSObject, HerosListPresenterProtocol {
     var router: HerosListCoordinatorProtocol?
     
     // MARK: data source
-    var heros: [Hero] = [Hero(id: "dsa", name: "dsadsa", powerStats: Stats(intelligence: 1, strength: 1, speed: 1, durability: 1, power: 1, combat: 1))]
+    var heros: [Hero] = []
+    
+    // MARK: methods
+    func getHeros() {
+        interactor?.getHeros(completion: { (result) in
+            switch result {
+            case .success(let heros):
+                self.heros = heros
+                self.view?.reloadCollectionSafely()
+            case .failure(let error):
+                break
+            }
+        })
+    }
     
     // MARK: collection methods
     func getCellForRowAt(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroCollectionViewCell", for: indexPath) as? HeroCollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroCollectionViewCell",
+                                                         for: indexPath) as? HeroCollectionViewCell {
             cell.configure(hero: heros[indexPath.row])
             return cell
         }
