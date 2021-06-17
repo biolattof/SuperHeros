@@ -63,6 +63,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
+                                            <outlet property="bannerView" destination="RK1-6Z-IAt" id="eOs-Sb-QnV"/>
                                             <outlet property="image" destination="ALz-8n-D9V" id="Ly0-CQ-0ZL"/>
                                             <outlet property="name" destination="ErC-u0-7fo" id="2gr-Ia-fcA"/>
                                         </connections>
