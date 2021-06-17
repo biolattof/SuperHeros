@@ -8,6 +8,7 @@ target 'SuperHeros' do
   # Pods for SuperHeros
   pod 'Alamofire'
   pod 'SwiftLint'
+  pod 'AlamofireImage'
 
   target 'SuperHerosTests' do
     inherit! :search_paths

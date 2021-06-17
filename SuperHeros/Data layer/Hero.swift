@@ -8,8 +8,10 @@
 import Foundation
 
 struct Hero: Decodable {
-    var id: String = ""
-    var name: String = ""
+    var id = ""
+    var name = ""
+    var smallImageURL = ""
+    var largeImageURL = ""
     var powerStats: Stats
     
     enum CodingKeys: String, CodingKey {

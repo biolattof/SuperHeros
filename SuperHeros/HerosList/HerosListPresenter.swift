@@ -40,7 +40,7 @@ class HerosListPresenter: NSObject, HerosListPresenterProtocol {
     }
     
     func getNumberOfSections() -> Int {
-        return 1
+        return heros.isEmpty ? 0 : 1
     }
     
     func getSizeForItem() -> CGSize {
@@ -49,4 +49,3 @@ class HerosListPresenter: NSObject, HerosListPresenterProtocol {
         return CGSize(width: width, height: height)
     }
 }
-

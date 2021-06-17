@@ -25,7 +25,9 @@ class HerosListViewController: UIViewController, Storyboarded, HerosListViewProt
     // MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        collection?.delegate = self
+        collection?.dataSource = self
+        reloadCollectionSafely()
     }
     
     // MARK: methods
@@ -61,8 +63,7 @@ extension HerosListViewController: UICollectionViewDelegate, UICollectionViewDat
         return unwrappedPresenter.getNumberOfSections()
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         guard let unwrappedPresenter = presenter else {
             return CGSize()
         }

@@ -9,8 +9,10 @@ import UIKit
 
 class HeroCollectionViewCell: UICollectionViewCell {
     @IBOutlet var name: UILabel!
+    @IBOutlet var imageURL: UIImageView!
     
     func configure(hero: Hero) {
         self.name.text = hero.name
+        self.imageURL.setImageFromUrl(hero.smallImageURL, completion: nil)
     }
 }

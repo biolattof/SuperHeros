@@ -29,6 +29,7 @@
 		FA5369A7267A529C00B6D03F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369A6267A529C00B6D03F /* Storyboarded.swift */; };
 		FA5369AC267A530800B6D03F /* HerosList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5369AB267A530800B6D03F /* HerosList.storyboard */; };
 		FA5369B7267BAD1A00B6D03F /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369B6267BAD1A00B6D03F /* HeroCollectionViewCell.swift */; };
+		FA5369C7267BC7FE00B6D03F /* UIImage+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369C6267BC7FE00B6D03F /* UIImage+utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		FA5369A6267A529C00B6D03F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		FA5369AB267A530800B6D03F /* HerosList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HerosList.storyboard; sourceTree = "<group>"; };
 		FA5369B6267BAD1A00B6D03F /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA5369C6267BC7FE00B6D03F /* UIImage+utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			children = (
 				FA5369A6267A529C00B6D03F /* Storyboarded.swift */,
 				FA5369482679A32800B6D03F /* Constants.swift */,
+				FA5369C6267BC7FE00B6D03F /* UIImage+utils.swift */,
 				FA53695E2679A9CE00B6D03F /* Data layer */,
 				FA5369B0267BAC3F00B6D03F /* HeroCollection */,
 				FA53694D2679A4F100B6D03F /* HerosList */,
@@ -486,6 +489,7 @@
 				FA53694F2679A52400B6D03F /* HerosListRouter.swift in Sources */,
 				FA536997267A3C8200B6D03F /* HerosListInteractor.swift in Sources */,
 				FA53693926799C9700B6D03F /* Hero.swift in Sources */,
+				FA5369C7267BC7FE00B6D03F /* UIImage+utils.swift in Sources */,
 				FA53698C267A3B8A00B6D03F /* HerosListPresenter.swift in Sources */,
 				FA5369672679AAE500B6D03F /* HerosListViewController.swift in Sources */,
 				FA5368F5267998A100B6D03F /* ViewController.swift in Sources */,
