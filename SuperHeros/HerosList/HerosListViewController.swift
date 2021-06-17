@@ -27,6 +27,7 @@ class HerosListViewController: UIViewController, Storyboarded, HerosListViewProt
         super.viewDidLoad()
         collection?.delegate = self
         collection?.dataSource = self
+        title = "Heros List"
         presenter?.getHeros()
     }
     
@@ -40,7 +41,7 @@ class HerosListViewController: UIViewController, Storyboarded, HerosListViewProt
 
 // MARK: UICollection delegate
 
-extension HerosListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HerosListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let unwrappedPresenter = presenter else {
             return UICollectionViewCell()

@@ -59,8 +59,7 @@ class HerosListPresenter: NSObject, HerosListPresenterProtocol {
     }
     
     func getSizeForItem() -> CGSize {
-        let width = view?.view.frame.width ?? 0
-        let height = view?.view.frame.height ?? 0
-        return CGSize(width: width, height: height)
+        let width = ((view?.view.frame.width ?? 0) / 2) - 15
+        return CGSize(width: width, height: width)
     }
 }

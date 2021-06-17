@@ -11,4 +11,3 @@ protocol APIConfiguration: URLRequestConvertible {
 }
 
 import Alamofire
-

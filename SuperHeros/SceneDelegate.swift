@@ -17,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        window?.rootViewController = HerosListRouter.createModule()
+        let navController = UINavigationController(rootViewController: HerosListRouter.createModule())
+        window?.rootViewController = navController
         
     }
     

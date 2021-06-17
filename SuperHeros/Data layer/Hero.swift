@@ -32,10 +32,12 @@ struct Stats: Decodable {
 }
 
 struct HeroImages: Decodable {
+    var extraSmallImageURL = ""
     var smallImageURL = ""
+    var mediumImageURL = ""
     var largeImageURL = ""
     
     enum CodingKeys: String, CodingKey {
-        case smallImageURL = "xs", largeImageURL = "lg"
+        case extraSmallImageURL = "xs", smallImageURL = "sm", mediumImageURL = "md", largeImageURL = "lg"
     }
 }

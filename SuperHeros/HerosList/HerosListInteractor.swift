@@ -23,4 +23,3 @@ class HerosListInteractor: NSObject, HerosListInteractorProtocol {
             }
     }
 }
-
