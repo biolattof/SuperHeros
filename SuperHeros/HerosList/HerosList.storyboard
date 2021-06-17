@@ -19,7 +19,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="js2-DK-tWR" customClass="HerosCollectionView" customModule="SuperHeros" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="cz4-Hr-BKh">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,22 +37,22 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ALz-8n-D9V">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RK1-6Z-IAt">
-                                                    <rect key="frame" x="0.0" y="103" width="113" height="21"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RK1-6Z-IAt">
+                                                    <rect key="frame" x="0.0" y="101.5" width="128" height="18.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-u0-7fo">
-                                                    <rect key="frame" x="0.0" y="102.5" width="128" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <rect key="frame" x="0.0" y="101.5" width="128" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="ALz-8n-D9V" secondAttribute="bottom" id="1Hs-sH-ekK"/>
                                                 <constraint firstItem="RK1-6Z-IAt" firstAttribute="top" secondItem="ErC-u0-7fo" secondAttribute="top" id="96b-rv-Lti"/>
                                                 <constraint firstAttribute="trailing" secondItem="ALz-8n-D9V" secondAttribute="trailing" id="Ccn-OX-A4e"/>
-                                                <constraint firstAttribute="bottom" secondItem="ErC-u0-7fo" secondAttribute="bottom" constant="5" id="FRU-Uq-1EL"/>
+                                                <constraint firstAttribute="bottom" secondItem="ErC-u0-7fo" secondAttribute="bottom" constant="8" id="FRU-Uq-1EL"/>
                                                 <constraint firstItem="ALz-8n-D9V" firstAttribute="leading" secondItem="Uxy-2H-TGe" secondAttribute="leading" id="Jxg-bV-mgN"/>
                                                 <constraint firstItem="ErC-u0-7fo" firstAttribute="leading" secondItem="Uxy-2H-TGe" secondAttribute="leading" id="L6F-h5-We8"/>
                                                 <constraint firstItem="ALz-8n-D9V" firstAttribute="top" secondItem="Uxy-2H-TGe" secondAttribute="top" id="N0m-Oh-azy"/>
