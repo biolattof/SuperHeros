@@ -28,6 +28,7 @@
 		FA536997267A3C8200B6D03F /* HerosListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA536996267A3C8200B6D03F /* HerosListInteractor.swift */; };
 		FA5369A7267A529C00B6D03F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369A6267A529C00B6D03F /* Storyboarded.swift */; };
 		FA5369AC267A530800B6D03F /* HerosList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5369AB267A530800B6D03F /* HerosList.storyboard */; };
+		FA5369B7267BAD1A00B6D03F /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5369B6267BAD1A00B6D03F /* HeroCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		FA536996267A3C8200B6D03F /* HerosListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListInteractor.swift; sourceTree = "<group>"; };
 		FA5369A6267A529C00B6D03F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		FA5369AB267A530800B6D03F /* HerosList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HerosList.storyboard; sourceTree = "<group>"; };
+		FA5369B6267BAD1A00B6D03F /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				FA5369A6267A529C00B6D03F /* Storyboarded.swift */,
 				FA5369482679A32800B6D03F /* Constants.swift */,
 				FA53695E2679A9CE00B6D03F /* Data layer */,
+				FA5369B0267BAC3F00B6D03F /* HeroCollection */,
 				FA53694D2679A4F100B6D03F /* HerosList */,
 				FA5368F0267998A100B6D03F /* AppDelegate.swift */,
 				FA5368F2267998A100B6D03F /* SceneDelegate.swift */,
@@ -212,6 +215,14 @@
 				FA53692726799A0400B6D03F /* HerosService.swift */,
 			);
 			path = "Data layer";
+			sourceTree = "<group>";
+		};
+		FA5369B0267BAC3F00B6D03F /* HeroCollection */ = {
+			isa = PBXGroup;
+			children = (
+				FA5369B6267BAD1A00B6D03F /* HeroCollectionViewCell.swift */,
+			);
+			path = HeroCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +490,7 @@
 				FA5369672679AAE500B6D03F /* HerosListViewController.swift in Sources */,
 				FA5368F5267998A100B6D03F /* ViewController.swift in Sources */,
 				FA5368F1267998A100B6D03F /* AppDelegate.swift in Sources */,
+				FA5369B7267BAD1A00B6D03F /* HeroCollectionViewCell.swift in Sources */,
 				FA53692826799A0400B6D03F /* HerosService.swift in Sources */,
 				FA5368F3267998A100B6D03F /* SceneDelegate.swift in Sources */,
 				FA53695A2679A84600B6D03F /* API.swift in Sources */,
