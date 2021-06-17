@@ -41,7 +41,9 @@ class HerosListViewController: UIViewController, Storyboarded, HerosListViewProt
 
 // MARK: UICollection delegate
 
-extension HerosListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension HerosListViewController: UICollectionViewDelegate,
+                                   UICollectionViewDataSource,
+                                   UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let unwrappedPresenter = presenter else {
             return UICollectionViewCell()

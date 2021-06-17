@@ -35,6 +35,7 @@ class HerosListPresenter: NSObject, HerosListPresenterProtocol {
                 self.heros = heros
                 self.view?.reloadCollectionSafely()
             case .failure(let error):
+                // show error on vc
                 break
             }
         })
